@@ -15,15 +15,14 @@ import visa from "./cardImages/visa.png";
 import master from "./cardImages/mastercard.png";
 import elo from "./cardImages/elo_1.png";
 import AExpress from "./cardImages/AExpress.png";
-import { Children } from "react";
 
 function PriceBoxCards(props) {
-  const { sup, source, price, discount } = props;
+  const { title, sup, source, price, discount } = props;
   return (
     <PurchaseContainer>
       <BestValueBox>
         <BestValueContent>
-          <BestValueTitle>{Children}</BestValueTitle>
+          <BestValueTitle>{title}</BestValueTitle>
           <BestValueP>• {sup} •</BestValueP>
           <BestValueImg src={source}></BestValueImg>
           <BestValueButton>COMPRE AGORA!</BestValueButton>

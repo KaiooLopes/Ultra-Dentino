@@ -16,9 +16,9 @@ function PriceBox() {
         sup="180 dias de suplementos"
         source={imgBV}
         price="600,00"
-        discount="299,98">
-        6 X EMBALAGENS
-      </PriceBoxCards>
+        discount="299,98"
+        title="6 X EMBALAGENS"
+      />
     </PriceBoxContainer>
   );
 }
