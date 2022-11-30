@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 //components
 import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
+import ProductApresentation from "./components/ProductPresentation";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -19,6 +20,7 @@ function App() {
     <>
       <GlobalStyle />
       <NavBar />
+      <ProductApresentation />
       <PriceBox />
     </>
   );

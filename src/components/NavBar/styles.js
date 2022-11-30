@@ -6,8 +6,6 @@ export const NavBarContainer = styled.div`
   padding: 10px;
   background-color: #00005c;
   display: flex;
-  //provisório
-  margin-bottom: 20px;
   min-height: 50px;
 
   @media (min-width: ${desktop}px) {
