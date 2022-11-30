@@ -3,12 +3,14 @@ import { createGlobalStyle } from "styled-components";
 
 //components
 import ClickBank from "./components/ClickBank";
+import PriceBox from "./components/PriceBox";
 
 const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
 
@@ -17,6 +19,7 @@ function App() {
     <>
       <GlobalStyle />
       <ClickBank />
+      <PriceBox />
     </>
   );
 }
