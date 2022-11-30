@@ -2,7 +2,6 @@
 import { createGlobalStyle } from "styled-components";
 
 //components
-import ClickBank from "./components/ClickBank";
 import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
 
@@ -19,7 +18,6 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <ClickBank />
       <NavBar />
       <PriceBox />
     </>
