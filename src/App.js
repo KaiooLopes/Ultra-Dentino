@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 //components
 import ClickBank from "./components/ClickBank";
+import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
 
 const GlobalStyle = createGlobalStyle`
@@ -19,6 +20,7 @@ function App() {
     <>
       <GlobalStyle />
       <ClickBank />
+      <NavBar />
       <PriceBox />
     </>
   );

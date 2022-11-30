@@ -48,11 +48,8 @@ export const BestValueImg = styled.img`
   max-height: 260px;
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding: 20px 16px 0px 4px;
-  margin-top: 16px;
+  margin: 16px auto;
+  padding: 20px 16px 4px;
 `;
 
 export const BestValueButton = styled.button`
@@ -63,6 +60,7 @@ export const BestValueButton = styled.button`
   height: 65px;
   font-family: "Roboto";
   font-size: 30px;
+  cursor: pointer;
   font-weight: 600;
   margin-top: 48px;
   margin-bottom: 20px;
