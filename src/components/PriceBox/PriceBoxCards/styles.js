@@ -1,35 +1,29 @@
 import styled from "styled-components";
 
-export const PurchaseContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 96px;
-  padding: 0px 15px 0px 15px;
-`;
-
-export const BestValueBox = styled.div`
-  margin-top: -20px;
+export const CardsBox = styled.div`
   background-color: #f9f8da;
   border-radius: 20px;
   border: #00005c 3px solid;
+  margin: 20px 0px;
   box-shadow: 0 12px 28px 0 rgb(0 0 0 / 42%);
   scroll-behavior: smooth;
   transition: transform 0.3s;
   &:hover {
     transform: scale(1.04);
   }
+  @media (min-width: 992px) {
+    width: 30%;
+  }
 `;
 
-export const BestValueContent = styled.div`
+export const CardsContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const BestValueTitle = styled.h3`
+export const CardsTitle = styled.h3`
   font-family: "Roboto";
   font-size: 33px;
   text-align: center;
@@ -37,42 +31,58 @@ export const BestValueTitle = styled.h3`
   padding-top: 24px;
 `;
 
-export const BestValueP = styled.p`
+export const CardsP = styled.p`
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   color: #272727;
 `;
 
-export const BestValueImg = styled.img`
+export const CardsImg = styled.img`
   max-height: 260px;
   max-width: 100%;
   height: auto;
   margin: 16px auto;
-  padding: 20px 16px 4px;
+  padding: 0px 16px 0px 4px;
+  ${(props) =>
+    props.name === "mostPopular" ? "margin: 16px 10.68px 16px 40px;" : ""}
+  ${(props) => (props.name === "comum" ? "margin: 16px 70px;" : "")}
+  ${(props) => (props.name === "bestValue" ? "padding: 0px 20px 0px 5px;" : "")}
+  @media (min-width: 992px) {
+    width: auto;
+    ${(props) =>
+      props.name === "bestValue" ? "margin: 57.6px 0px 57.6px 16px" : ""}
+    ${(props) =>
+      props.name === "comum" ? "margin: 7.75px 70px 7.75px 70px;" : ""}
+  }
 `;
 
-export const BestValueButton = styled.button`
-  background-color: #ffb200;
-  border-radius: 8px;
-  border: #00005c 3px solid;
-  width: 300px;
-  height: 65px;
-  font-family: "Roboto";
-  font-size: 30px;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 48px;
-  margin-bottom: 20px;
+export const FreeEbooks = styled.img`
+  width: 225px;
+  height: 40px;
 `;
 
-export const BestValuePriceImg = styled.img`
+export const CardsButton = styled.button`
+  background-color: #1bab53;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0px;
+  height: 50px;
+  width: 250px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const CardsPriceImg = styled.img`
   max-width: 264px;
   margin: 0px 37px;
   padding-top: 48px;
 `;
 
-export const BestValueTotal = styled.p`
+export const CardsTotal = styled.p`
   font-size: 23px;
   font-weight: 300px;
 `;

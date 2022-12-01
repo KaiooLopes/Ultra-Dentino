@@ -13,6 +13,9 @@ export const DiscountBox = styled.div`
   height: 96px;
   background-color: #00005c;
   padding: 0px 15px 0px 15px;
+  @media (min-width: 992px) {
+    height: 130px;
+  }
 `;
 
 export const DiscountText = styled.h2`
@@ -21,107 +24,77 @@ export const DiscountText = styled.h2`
   font-weight: 500;
   text-align: center;
   color: white;
+  @media (min-width: 992px) {
+    font-size: 34px;
+    margin-bottom: 5px;
+  }
+`;
+
+export const TriangleBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Triangle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #00005c;
+  margin-top: -20px;
+  rotate: 45deg;
+  @media (min-width: 992px) {
+    width: 49px;
+    height: 49px;
+    margin-top: -25px;
+  }
 `;
 
 export const PurchaseContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: 96px;
+  margin-top: 50px;
   padding: 0px 15px 0px 15px;
-`;
-
-export const BestValueBox = styled.div`
-  margin-top: -20px;
-  background-color: #f9f8da;
-  border-radius: 20px;
-  border: #00005c 3px solid;
-  box-shadow: 0 12px 28px 0 rgb(0 0 0 / 42%);
-  scroll-behavior: smooth;
-  transition: transform 0.3s;
-  &:hover {
-    transform: scale(1.04);
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    ${(props) => (props.name === "bestValue" ? "order-self: 1;" : "")}
   }
 `;
 
-export const BestValueContent = styled.div`
+export const ReviewBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 188px;
+  @media (min-width: 992px) {
+    height: 140px;
+    padding: 24px 0px 24px;
+  }
 `;
 
-export const BestValueTitle = styled.h3`
-  font-family: "Roboto";
-  font-size: 33px;
-  text-align: center;
-  color: #00005c;
-  padding-top: 24px;
-`;
-
-export const BestValueP = styled.p`
-  font-size: 20px;
-  font-weight: 500;
+export const ReviewFP = styled.p`
+  font-size: 24px;
   text-align: center;
   color: #272727;
 `;
 
-export const BestValueImg = styled.img`
-  max-height: 260px;
-  max-width: 100%;
+export const FiveStars = styled.img`
+  width: 245px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding: 20px 16px 0px 4px;
-  margin-top: 16px;
+  padding: 8px 0px;
+  margin: 0px 22px;
 `;
 
-export const BestValueButton = styled.button`
-  background-color: #ffb200;
-  border-radius: 8px;
-  border: #00005c 3px solid;
-  width: 300px;
-  height: 65px;
-  font-family: "Roboto";
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 48px;
-  margin-bottom: 20px;
-`;
-
-export const BestValuePriceImg = styled.img`
-  max-width: 264px;
-  margin: 0px 37px;
-  padding-top: 48px;
-`;
-
-export const BestValueTotal = styled.p`
-  font-size: 23px;
-  font-weight: 300px;
-`;
-
-export const FlagsBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 15px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-`;
-
-export const Flags = styled.img`
-  max-width: 60px;
-  max-height: 25px;
-`;
-
-export const FreeShipping = styled.p`
-  font-family: "Roboto";
-  font-size: 25px;
-  font-weight: 300px;
-  margin-bottom: 48px;
-  margin-top: 10px;
+export const ReviewSP = styled.p`
+  font-size: 24px;
+  text-align: center;
+  color: #272727;
 `;
