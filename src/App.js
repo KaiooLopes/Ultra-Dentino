@@ -1,5 +1,6 @@
 //styles
 import { createGlobalStyle } from "styled-components";
+import MadeBrazil from "./components/MadeBrazil";
 
 //components
 import NavBar from "./components/NavBar";
@@ -35,6 +36,7 @@ function App() {
       <UltraDentinoSection />
       <PriceBox />
       <SatisfactionSection />
+      <MadeBrazil />
     </>
   );
 }
