@@ -20,7 +20,7 @@ import Ebooks from "./cardImages/Bonus_Ebooks.png";
 function PriceBoxCards(props) {
   const { title, sup, source, price, discount, name } = props;
   return (
-    <CardsBox>
+    <CardsBox name={name}>
       <CardsContent>
         <CardsTitle>{title}</CardsTitle>
         <CardsP>• {sup} •</CardsP>

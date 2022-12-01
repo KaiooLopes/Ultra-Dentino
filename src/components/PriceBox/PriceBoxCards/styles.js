@@ -13,6 +13,9 @@ export const CardsBox = styled.div`
   }
   @media (min-width: 992px) {
     width: 30%;
+    ${(props) => (props.name === "bestValue" ? "order: 1;" : "")}
+    ${(props) => (props.name === "mostPopular" ? "order: 0;" : "")}
+    ${(props) => (props.name === "comum" ? "order: 2;" : "")}
   }
 `;
 

@@ -63,7 +63,6 @@ export const PurchaseContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    ${(props) => (props.name === "bestValue" ? "order-self: 1;" : "")}
   }
 `;
 

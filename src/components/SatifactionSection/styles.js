@@ -19,7 +19,7 @@ export const SatisfactionInner = styled.div`
   justify-content: center;
   border-radius: 10px;
   background-color: #fff;
-  padding: 15px 0px;
+  padding: 0px 15px;
 `;
 
 export const Garantia = styled.img`
@@ -36,8 +36,15 @@ export const SatifactionTexts = styled.div`
 `;
 
 export const SatisfactionTitle = styled.p`
-  font-size: 23px;
-  line-height: 1.2px;
-  font-weight: 500;
-  text-align: start;
+  b {
+    font-size: 23px;
+    line-height: 1.2px;
+    font-weight: 500;
+    text-align: start;
+  }
+`;
+
+export const SatisfactionP = styled.p`
+  font-size: 24px;
+  color: #272727;
 `;
