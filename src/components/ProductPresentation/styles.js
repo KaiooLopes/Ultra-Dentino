@@ -29,6 +29,8 @@ export const ImageProduct = styled.div`
 `;
 
 export const ProductApresentationContent = styled.div`
+  display: flex;
+  flex-direction: column;
   div:nth-child(1) {
     margin: 20px 0;
     max-width: 500px;
@@ -46,7 +48,7 @@ export const ProductApresentationContent = styled.div`
     margin: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     img:nth-child(2) {
       width: 200px;
     }
