@@ -4,6 +4,10 @@ import { createGlobalStyle } from "styled-components";
 //components
 import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
+import ProductApresentation from "./components/ProductPresentation";
+import ReferenceSection from "./components/ReferenceSection";
+import UltraDentinoSection from "./components/UltraDentinoSection";
+import WhyCreatedSection from "./components/WhyCreatedSection";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -18,6 +22,11 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <NavBar />
+      <ProductApresentation />
+      <ReferenceSection />
+      <WhyCreatedSection />
+      <UltraDentinoSection />
       <PriceBox />
     </>
   );
