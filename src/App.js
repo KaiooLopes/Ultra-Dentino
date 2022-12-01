@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
 import ProductApresentation from "./components/ProductPresentation";
 import ReferenceSection from "./components/ReferenceSection";
+import SatisfactionSection from "./components/SatifactionSection";
 import UltraDentinoSection from "./components/UltraDentinoSection";
 import WhyCreatedSection from "./components/WhyCreatedSection";
 
@@ -28,6 +29,7 @@ function App() {
       <WhyCreatedSection />
       <UltraDentinoSection />
       <PriceBox />
+      <SatisfactionSection />
     </>
   );
 }
