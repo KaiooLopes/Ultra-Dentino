@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
 import ProductApresentation from "./components/ProductPresentation";
 import ReferenceSection from "./components/ReferenceSection";
+import UltraDentinoSection from "./components/UltraDentinoSection";
 import WhyCreatedSection from "./components/WhyCreatedSection";
 
 const GlobalStyle = createGlobalStyle`
@@ -25,6 +26,7 @@ function App() {
       <ProductApresentation />
       <ReferenceSection />
       <WhyCreatedSection />
+      <UltraDentinoSection />
       <PriceBox />
     </>
   );
