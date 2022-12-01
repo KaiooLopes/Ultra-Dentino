@@ -12,7 +12,7 @@ function SatisfactionSection() {
   return (
     <SatifactionContainer>
       <SatisfactionInner>
-        <Garantia src={garantia} />
+        <Garantia src={garantia} alt="" />
         <SatifactionTexts>
           <SatisfactionTitle>
             <b>Garantia de devolução do seu dinheiro de 60 dias</b>

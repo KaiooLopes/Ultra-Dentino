@@ -20,7 +20,7 @@ const ReferenceSection = () => {
           Nature mostra que pessoas com boa saúde bucal tem um alto número de
           bactérias boas na sua boca.
         </p>
-        <span>(Sem pasta de dentes ou lavagem bucal involvidos)</span>
+        <span>(Sem pasta de dentes ou lavagem bucal envolvidos)</span>
         <p>
           Muitos produtos comuns para saúde bucal (como pasta de dentes e
           enxaguantes bucais) contém ingredientes tóxicos que podem destruir o
@@ -31,8 +31,7 @@ const ReferenceSection = () => {
         <ReferalLink>
           <a
             href="https://www.nature.com/articles/d41586-021-02920-w"
-            target="_blank"
-          >
+            target="_blank">
             Link de Referência
           </a>
         </ReferalLink>
