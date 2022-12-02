@@ -12,13 +12,13 @@ export const Background = styled.div`
   background-repeat: no-repeat;
   /* provisorio */
   margin-bottom: 20px;
-  padding: 40px 0;
+  padding: 70px 0;
 `;
 
 export const UltraDentinoContent = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
   align-items: center;
   width: 70%;
   background-color: white;
@@ -38,7 +38,7 @@ export const Title = styled.div`
 
   @media (min-width: ${desktop}px) {
     h1 {
-      font-size: 40px;
+      font-size: 60px;
     }
   }
 `;

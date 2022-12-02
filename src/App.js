@@ -6,7 +6,8 @@ import MadeBrazil from "./components/MadeBrazil";
 //components
 import NavBar from "./components/NavBar";
 import PriceBox from "./components/PriceBox";
-import ProductApresentation from "./components/ProductPresentation";
+import ProductApresentationSection from "./components/ProductApresentationSection";
+import ProductCompositionSection from "./components/ProductCompositionSection";
 import ReferenceSection from "./components/ReferenceSection";
 import SatisfactionSection from "./components/SatifactionSection";
 import UltraDentinoSection from "./components/UltraDentinoSection";
@@ -31,9 +32,10 @@ function App() {
     <>
       <GlobalStyle />
       <NavBar />
-      <ProductApresentation />
+      <ProductApresentationSection />
       <ReferenceSection />
       <WhyCreatedSection />
+      <ProductCompositionSection />
       <UltraDentinoSection />
       <PriceBox />
       <SatisfactionSection />

@@ -8,7 +8,11 @@ export const SatifactionContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-image: url(${backgroundMob});
+<<<<<<< HEAD
+  width: 100%;
+=======
   padding: 0px 15px;
+>>>>>>> dd889324404c5e6c76815a714339ffd016b7d611
   padding-top: 30px;
   @media (min-width: 992px) {
     background-image: url(${backgroundDesk});

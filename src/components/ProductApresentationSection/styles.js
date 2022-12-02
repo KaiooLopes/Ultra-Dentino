@@ -3,7 +3,6 @@ import styled from "styled-components";
 const desktop = 994;
 
 export const ProductApresentationContainer = styled.div`
-  padding: 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +17,7 @@ export const ProductApresentationContainer = styled.div`
 
 export const ImageProduct = styled.div`
   margin: 20px 0 10px;
+  width: 80%;
   img {
     width: 100%;
     max-width: 750px;
@@ -25,10 +25,17 @@ export const ImageProduct = styled.div`
 
   @media (min-width: ${desktop}px) {
     min-width: 380px;
+    width: none;
+  }
+
+  @media (min-width: ${desktop}px) {
+    width: 30%;
   }
 `;
 
 export const ProductApresentationContent = styled.div`
+  max-width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   div:nth-child(1) {
@@ -48,6 +55,7 @@ export const ProductApresentationContent = styled.div`
     margin: 20px 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     img:nth-child(2) {
       width: 200px;
@@ -55,5 +63,10 @@ export const ProductApresentationContent = styled.div`
     img {
       width: 80px;
     }
+  }
+
+  @media (min-width: ${desktop}px) {
+    width: 60%;
+    max-width: 1200px;
   }
 `;
