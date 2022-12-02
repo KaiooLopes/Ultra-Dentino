@@ -12,6 +12,7 @@ import ProductCompositionSection from "./components/ProductCompositionSection";
 import ReferenceSection from "./components/ReferenceSection";
 import SatisfactionSection from "./components/SatifactionSection";
 import UltraDentinoSection from "./components/UltraDentinoSection";
+import UsersFeedbackSection from "./components/UsersFeedbackSection";
 import WhyCreatedSection from "./components/WhyCreatedSection";
 import Font from "./fonts/Quicksand-VariableFont_wght.ttf";
 
@@ -39,6 +40,7 @@ function App() {
       <ProductCompositionSection />
       <UltraDentinoSection />
       <BonusSection />
+      <UsersFeedbackSection />
       <PriceBox />
       <SatisfactionSection />
       <MadeBrazil />
