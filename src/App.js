@@ -1,5 +1,6 @@
 //styles
 import { createGlobalStyle } from "styled-components";
+import FAQ from "./components/FAQ";
 import MadeBrazil from "./components/MadeBrazil";
 
 //components
@@ -37,6 +38,7 @@ function App() {
       <PriceBox />
       <SatisfactionSection />
       <MadeBrazil />
+      <FAQ />
     </>
   );
 }
