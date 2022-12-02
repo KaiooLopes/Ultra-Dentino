@@ -1,5 +1,6 @@
 //styles
 import { createGlobalStyle } from "styled-components";
+import BonusSection from "./components/BonusSection";
 import FAQ from "./components/FAQ";
 import MadeBrazil from "./components/MadeBrazil";
 
@@ -37,6 +38,7 @@ function App() {
       <WhyCreatedSection />
       <ProductCompositionSection />
       <UltraDentinoSection />
+      <BonusSection />
       <PriceBox />
       <SatisfactionSection />
       <MadeBrazil />

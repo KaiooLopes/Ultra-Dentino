@@ -10,8 +10,6 @@ export const Background = styled.div`
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  /* provisorio */
-  margin-bottom: 20px;
   padding: 70px 0;
 `;
 
