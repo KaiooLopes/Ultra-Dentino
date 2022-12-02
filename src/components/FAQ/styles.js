@@ -23,6 +23,7 @@ export const FAQParagraphs = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 48px;
   @media (min-width: 992px) {
     display: flex;
     flex-direction: column;
