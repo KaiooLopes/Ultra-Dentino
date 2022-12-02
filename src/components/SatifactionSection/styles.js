@@ -8,7 +8,6 @@ export const SatifactionContainer = styled.div`
   align-items: center;
   background-image: url(${backgroundMob});
   width: 100%;
-  padding: 0px 15px;
   padding-top: 30px;
 `;
 

@@ -8,11 +8,11 @@ import Made from "./images/Made.png";
 import Natural from "./images/Natural.png";
 import Anvisa from "./images/Anvisa.png";
 
-const ProductApresentation = () => {
+const ProductApresentationSection = () => {
   return (
     <ProductApresentationContainer>
       <ImageProduct>
-        <img src={Product} alt="Product Apresentation Image" />
+        <img src={Product} alt="Product Apresentation" />
       </ImageProduct>
       <ProductApresentationContent>
         <div>
@@ -37,4 +37,4 @@ const ProductApresentation = () => {
   );
 };
 
-export default ProductApresentation;
+export default ProductApresentationSection;
