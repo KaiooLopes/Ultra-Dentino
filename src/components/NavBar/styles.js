@@ -81,22 +81,26 @@ export const NavList = styled.div`
     margin-left: 30px;
     list-style-type: none;
 
-    li a {
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
       margin: 20px 0;
       font-size: 19px;
-      text-decoration: none;
-      color: white;
     }
 
     li:last-child {
-      font-size: 19px;
-      padding: 7px 12px 10px;
-      background-color: #e54848;
-      color: white;
-      text-decoration: none;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 1px 1px 10px #001539;
+      a {
+        background-color: #e54848;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 7px 12px 10px;
+        font-size: 19px;
+        text-decoration: none;
+        box-shadow: 1px 1px 10px #001539;
+      }
     }
   }
   @media (min-width: ${desktop}px) {
