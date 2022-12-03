@@ -15,7 +15,7 @@ import Composition from "./images/Composition.jpg";
 
 const ProductCompositionSection = () => {
   return (
-    <ProductCompositionContainer>
+    <ProductCompositionContainer id="ProductComposition">
       <InsideUltraDentino>
         <h3>Inside every ProDentim you’ll find:</h3>
         <p>

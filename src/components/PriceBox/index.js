@@ -18,7 +18,7 @@ import PriceBoxCards from "./PriceBoxCards/index.js";
 
 function PriceBox() {
   return (
-    <PriceBoxContainer>
+    <PriceBoxContainer id="PriceBox">
       <DiscountBox>
         <DiscountText>
           Compre seu UltraDentino com desconto <br /> enquanto durarem os

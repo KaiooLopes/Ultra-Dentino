@@ -9,7 +9,7 @@ import DoctorImg from "./images/doctor.png";
 
 const ReferenceSection = () => {
   return (
-    <ReferenceSectionContainer>
+    <ReferenceSectionContainer id="ReferenceSection">
       <DoctorImage>
         <img src={DoctorImg} alt="Doctor Image" />
       </DoctorImage>
@@ -31,7 +31,8 @@ const ReferenceSection = () => {
         <ReferalLink>
           <a
             href="https://www.nature.com/articles/d41586-021-02920-w"
-            target="_blank">
+            target="_blank"
+          >
             Link de Referência
           </a>
         </ReferalLink>

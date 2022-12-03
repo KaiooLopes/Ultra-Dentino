@@ -81,17 +81,19 @@ export const NavList = styled.div`
     margin-left: 30px;
     list-style-type: none;
 
-    li {
+    li a {
       margin: 20px 0;
       font-size: 19px;
+      text-decoration: none;
       color: white;
     }
 
-    li button {
+    li:last-child {
       font-size: 19px;
       padding: 7px 12px 10px;
       background-color: #e54848;
       color: white;
+      text-decoration: none;
       border: none;
       border-radius: 5px;
       box-shadow: 1px 1px 10px #001539;

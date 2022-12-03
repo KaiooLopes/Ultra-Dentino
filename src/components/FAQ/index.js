@@ -8,7 +8,7 @@ import {
 
 function FAQ() {
   return (
-    <FAQContainer>
+    <FAQContainer id="FAQ">
       <FAQTitle>
         <b>Perguntas Frequentes</b>
       </FAQTitle>

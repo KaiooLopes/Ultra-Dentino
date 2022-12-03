@@ -17,6 +17,11 @@ import WhyCreatedSection from "./components/WhyCreatedSection";
 import Font from "./fonts/Quicksand-VariableFont_wght.ttf";
 
 const GlobalStyle = createGlobalStyle`
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
   @font-face {
     font-family: "QuickSand" ;
     src: url(${Font});

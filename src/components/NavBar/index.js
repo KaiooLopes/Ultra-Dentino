@@ -35,11 +35,17 @@ const NavBar = () => {
       </HamburguerMenu>
       <NavList openMenu={openMenu}>
         <ul>
-          <li>Sobre UltraDentino</li>
-          <li>Ingredientes</li>
-          <li>FAQ</li>
           <li>
-            <button>OrderNow</button>
+            <a href="#ReferenceSection">Sobre UltraDentino</a>
+          </li>
+          <li>
+            <a href="#ProductComposition">Ingredientes</a>
+          </li>
+          <li>
+            <a href="#FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#PriceBox">OrderNow</a>
           </li>
         </ul>
       </NavList>
