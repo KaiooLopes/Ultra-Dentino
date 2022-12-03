@@ -11,6 +11,7 @@ import ProductApresentationSection from "./components/ProductApresentationSectio
 import ProductCompositionSection from "./components/ProductCompositionSection";
 import ReferenceSection from "./components/ReferenceSection";
 import SatisfactionSection from "./components/SatifactionSection";
+import ScientificSection from "./components/ScientificSection";
 import UltraDentinoSection from "./components/UltraDentinoSection";
 import UsersFeedbackSection from "./components/UsersFeedbackSection";
 import WhyCreatedSection from "./components/WhyCreatedSection";
@@ -51,6 +52,7 @@ function App() {
       <MadeBrazil />
       <FAQ />
       <PriceBox />
+      <ScientificSection />
     </>
   );
 }
