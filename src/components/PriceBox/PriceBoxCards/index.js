@@ -24,7 +24,9 @@ function PriceBoxCards(props) {
       <CardsContent>
         <CardsTitle>{title}</CardsTitle>
         <CardsP>• {sup} •</CardsP>
-        <CardsImg name={name} src={source}></CardsImg>
+        <CardsImg>
+          <img name={name} src={source} alt="" />
+        </CardsImg>
         <FreeEbooks src={Ebooks} />
         <CardsButton href="">COMPRE AGORA</CardsButton>
         <CardsTotal>
