@@ -6,11 +6,12 @@ export const ScientificContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 48px 0px;
-  padding: 0px 15px;
+  max-width: 100%;
 `;
 
 export const ScientificTitle = styled.h3`
   font-size: 28px;
+  text-align: center;
 `;
 
 export const ScientificListBox = styled.div`
@@ -23,8 +24,10 @@ export const ScientificListBox = styled.div`
 export const ScientificList = styled.ol`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  row-gap: 10px;
   font-size: 14px;
-  padding: 15px;
   text-align: start;
+  max-width: 100%;
+  li {
+  }
 `;

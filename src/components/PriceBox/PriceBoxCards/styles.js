@@ -41,23 +41,26 @@ export const CardsP = styled.p`
   color: #272727;
 `;
 
-export const CardsImg = styled.img`
-  max-height: 260px;
+export const CardsImg = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80%;
+  }
+  /*  max-height: 260px;
   max-width: 100%;
   height: auto;
-  margin: 16px auto;
   padding: 0px 16px 0px 4px;
-  ${(props) =>
-    props.name === "mostPopular" ? "margin: 16px 10.68px 16px 40px;" : ""}
-  ${(props) => (props.name === "comum" ? "margin: 16px 70px;" : "")}
-  ${(props) => (props.name === "bestValue" ? "padding: 0px 20px 0px 5px;" : "")}
+   ${(props) => (props.name === "mostPopular" ? "margin: 16px 0px;" : "")}
+${(props) => (props.name === "comum" ? "margin: 16px 0px;" : "")}
+${(props) => (props.name === "bestValue" ? "padding: 0px 20px 0px 5px;" : "")} 
   @media (min-width: 992px) {
     width: auto;
     ${(props) =>
-      props.name === "bestValue" ? "margin: 57.6px 0px 57.6px 16px" : ""}
-    ${(props) =>
-      props.name === "comum" ? "margin: 7.75px 70px 7.75px 70px;" : ""}
-  }
+    props.name === "bestValue" ? "margin: 57.6px 0px 57.6px 16px" : ""}
+    ${(props) => (props.name === "comum" ? "margin: 7.75px 0px;" : "")}
+  } */
 `;
 
 export const FreeEbooks = styled.img`
@@ -81,7 +84,6 @@ export const CardsButton = styled.button`
 
 export const CardsPriceImg = styled.img`
   max-width: 264px;
-  margin: 0px 37px;
   padding-top: 48px;
 `;
 
