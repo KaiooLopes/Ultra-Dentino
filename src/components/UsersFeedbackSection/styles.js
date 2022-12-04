@@ -25,11 +25,12 @@ export const Polaroids = styled.div`
   align-items: center;
   div {
     display: flex;
+    max-width: 100%;
     flex-direction: row;
     justify-content: center;
   }
   img {
-    width: 40%;
+    width: 35%;
     max-width: 250px;
     margin: 0 10px;
     background-color: white;
@@ -53,6 +54,9 @@ export const Polaroids = styled.div`
 
   @media (min-width: ${desktop}px) {
     flex-direction: row;
+    img {
+      width: 40%;
+    }
   }
 `;
 

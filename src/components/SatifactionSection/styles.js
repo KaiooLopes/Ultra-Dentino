@@ -8,11 +8,7 @@ export const SatifactionContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-image: url(${backgroundMob});
-<<<<<<< HEAD
   width: 100%;
-=======
-  padding: 0px 15px;
->>>>>>> dd889324404c5e6c76815a714339ffd016b7d611
   padding-top: 30px;
   @media (min-width: 992px) {
     background-image: url(${backgroundDesk});
@@ -30,8 +26,8 @@ export const SatisfactionInner = styled.div`
   justify-content: center;
   border-radius: 10px;
   background-color: #fff;
-  padding: 0px 15px;
   margin: 48px 0px;
+  max-width: 100%;
   @media (min-width: 992px) {
     display: flex;
     flex-direction: row;
@@ -55,6 +51,7 @@ export const Garantia = styled.img`
 
 export const SatifactionTexts = styled.div`
   display: flex;
+  max-width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   width: 300px;
