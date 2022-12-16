@@ -9,6 +9,7 @@ export const ReferencesContainer = styled.div`
 export const Title = styled.h1`
   text-align: center;
   margin: 40px 0;
+  font-size: 40px;
 `;
 export const ReferencesContent = styled.div`
   width: 90%;
