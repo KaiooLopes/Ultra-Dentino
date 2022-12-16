@@ -7,13 +7,27 @@ const MultiPagesNav = () => {
   return (
     <MultiPagesNavContainer>
       <Links>
-        <Link to="/contact">Contact</Link>
-        <Link to="/references">References</Link>
-        <Link to="/termsofuse">TermsOfUse</Link>
-        <Link to="/disclaimer">Disclaimer</Link>
-        <Link to="/privacepolicy">Privace Policy</Link>
-        <Link to="/shippingpolicy">Shipping Policy</Link>
-        <Link to="/refundpolicy">Refund Policy</Link>
+        <Link to="/contact" target="_blank">
+          Contact
+        </Link>
+        <Link to="/references" target="_blank">
+          References
+        </Link>
+        <Link to="/termsofuse" target="_blank">
+          TermsOfUse
+        </Link>
+        <Link to="/disclaimer" target="_blank">
+          Disclaimer
+        </Link>
+        <Link to="/privacepolicy" target="_blank">
+          Privace Policy
+        </Link>
+        <Link to="/shippingpolicy" target="_blank">
+          Shipping Policy
+        </Link>
+        <Link to="/refundpolicy" target="_blank">
+          Refund Policy
+        </Link>
       </Links>
     </MultiPagesNavContainer>
   );
