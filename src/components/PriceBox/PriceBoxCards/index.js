@@ -27,7 +27,7 @@ function PriceBoxCards(props) {
         <CardsImg>
           <img name={name} src={source} alt="" />
         </CardsImg>
-        <FreeEbooks src={Ebooks} />
+        <FreeEbooks name={name} src={Ebooks} />
         <CardsButton href="">COMPRE AGORA</CardsButton>
         <CardsTotal>
           TOTAL: <s>R$ {price}</s> <b>R$ {discount}</b>

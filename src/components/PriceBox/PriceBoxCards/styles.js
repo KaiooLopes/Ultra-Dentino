@@ -66,6 +66,7 @@ ${(props) => (props.name === "bestValue" ? "padding: 0px 20px 0px 5px;" : "")}
 export const FreeEbooks = styled.img`
   width: 225px;
   height: 40px;
+  ${(props) => (props.name === "comum" ? "display: none" : "")}
 `;
 
 export const CardsButton = styled.button`

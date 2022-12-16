@@ -46,6 +46,7 @@ export const BonusCard1 = styled.div`
   border: 6px solid black;
   padding: 10px;
   max-width: 500px;
+  margin-bottom: 20px;
 
   div {
     background-color: white;

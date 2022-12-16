@@ -19,8 +19,7 @@ const ProductCompositionSection = () => {
       <InsideUltraDentino>
         <h3>Inside every ProDentim you’ll find:</h3>
         <p>
-          3.5 billions of probiotics, along with 3 unique ingredients that are
-          clinically proven to support the health of your teeth and gums
+          3 ingredientes únicos do ultra blend que possuem comprovação clínica:
         </p>
       </InsideUltraDentino>
       <Lactobacillus>
@@ -31,12 +30,11 @@ const ProductCompositionSection = () => {
           <LactobacillusContent>
             <h2>Lactobacillus Paracasei</h2>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Supports the health of
-              your gums
+              <i className="fa-solid fa-circle-check"></i>Melhora a saúde bucal
             </p>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Helps your sinuses
-              stay free and open
+              <i className="fa-solid fa-circle-check"></i>
+              Diminui a congestão nasal
             </p>
           </LactobacillusContent>
         </div>
@@ -47,12 +45,10 @@ const ProductCompositionSection = () => {
           <LactobacillusContent>
             <h2>Lactobacillus Reuteri</h2>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Helps with
-              inflammation
+              <i className="fa-solid fa-circle-check"></i>Diminui a inflamação
             </p>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Supports a healthy
-              mouth environment
+              <i className="fa-solid fa-circle-check"></i>Melhora a flora bucal
             </p>
           </LactobacillusContent>
         </div>
@@ -61,18 +57,17 @@ const ProductCompositionSection = () => {
             <img src={LactobacillusParacasei} alt="LactobacillusParacasei" />
           </LactobacillusImage>
           <LactobacillusContent>
-            <h2>B.lactis BL-04®</h2>
+            <h2>Bifidobacterium lactis</h2>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Supports the balance
-              of mouth bacteria
+              <i className="fa-solid fa-circle-check"></i>Aumenta a imunidade
             </p>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Supports respiratory
-              tract
+              <i className="fa-solid fa-circle-check"></i>
+              Ajuda o sistema respiratório
             </p>
             <p>
-              <i className="fa-solid fa-circle-check"></i>Maintains a healthy
-              immune system
+              <i className="fa-solid fa-circle-check"></i>
+              Mantém o balanço de bactérias boas na boca
             </p>
           </LactobacillusContent>
         </div>
@@ -82,22 +77,26 @@ const ProductCompositionSection = () => {
           <img src={Composition} alt="Composition" />
         </MineralsImage>
         <MineralsContent>
-          <h2>Proprietary Blend of 4 Plants and Minerals</h2>
+          <h2>Dentro do ultra blend tem 5 plantas, vitaminas e minerais:</h2>
           <p>
-            <i className="fa-solid fa-circle-check"></i>Inulin supports the good
-            bacteria
+            <i className="fa-solid fa-circle-check"></i>inulina aumenta a
+            densidade de bactérias boas
           </p>
           <p>
-            <i className="fa-solid fa-circle-check"></i>Malic acid in
-            strawberries helps maintain tooth whiteness
+            <i className="fa-solid fa-circle-check"></i>Ácido málico clarea os
+            dentes
           </p>
           <p>
-            <i className="fa-solid fa-circle-check"></i>Tricalcium Phosphate
-            supports tooth health
+            <i className="fa-solid fa-circle-check"></i>Fosfato tricálcio mantém
+            os dentes saudáveis
           </p>
           <p>
-            <i className="fa-solid fa-circle-check"></i>Peppermint is a natural
-            anti-inflammatory
+            <i className="fa-solid fa-circle-check"></i>Hortelã-pimenta anti
+            inflamatório natural
+          </p>
+          <p>
+            <i className="fa-solid fa-circle-check"></i>Colecalciferol dentes
+            mais fortes
           </p>
         </MineralsContent>
       </Minerals>
