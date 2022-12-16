@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardsBox = styled.div`
   background-color: #f9f8da;
+  max-width: 100%;
   border-radius: 20px;
   border: #00005c 3px solid;
   margin: 20px 0px;
@@ -77,6 +78,7 @@ export const CardsButton = styled.button`
   font-weight: 500;
   margin: 20px 0px;
   height: 50px;
+  max-width: 100%;
   width: 250px;
   &:hover {
     cursor: pointer;
@@ -95,10 +97,10 @@ export const CardsTotal = styled.p`
 
 export const FlagsBox = styled.div`
   display: flex;
+  max-width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 15px;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
