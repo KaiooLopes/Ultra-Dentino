@@ -1,10 +1,13 @@
 import MultiPagesNav from "../../components/MultiPagesNav";
+import ContactSection from "./components/ContactSection";
+import FAQSection from "./components/FAQSection";
 import { ContactContainer } from "./styles";
 
 const Contact = () => {
   return (
     <ContactContainer>
-      <h1>Contact</h1>
+      <ContactSection />
+      <FAQSection />
       <MultiPagesNav />
     </ContactContainer>
   );
