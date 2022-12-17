@@ -9,11 +9,14 @@ export const ContactSectionContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  color: #145683;
-  text-shadow: 1px 1px 3px #052840;
-  text-decoration: underline;
+export const Title = styled.div`
   text-align: center;
-  font-size: 45px;
-  margin: 10px 0;
+  a {
+    color: #145683;
+    text-shadow: 1px 1px 3px #052840;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 45px;
+    margin: 10px 0;
+  }
 `;

@@ -51,3 +51,15 @@ export const TitleFAQ = styled.div`
     }
   }
 `;
+
+export const Questions = styled.div`
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin: 50px auto;
+  @media (min-width: ${desktop}px) {
+    width: 80%;
+  }
+`;
