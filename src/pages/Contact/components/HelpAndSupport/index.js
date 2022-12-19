@@ -1,11 +1,47 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import {
   HelpAndSupportContainer,
   Attendance,
   Title,
   SendFeedback,
+  Select,
+  OptionSelected,
+  DivOptions,
+  Inputs,
+  TextareaMessage,
+  DivSubmit,
+  Error,
+  Label,
 } from "./styles";
 
 const HelpAndSupport = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const [clicked1, setClicked1] = useState(false);
+  const [select1, setSelect1] = useState(null);
+  const [clicked2, setClicked2] = useState(false);
+  const [select2, setSelect2] = useState(null);
+
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      !email ||
+      !name ||
+      !msg ||
+      !select1 ||
+      (select1 !== "Obter um Reembolso" && select2)
+    ) {
+      setError(true);
+    } else {
+      console.log("enviado");
+    }
+  };
+
   return (
     <HelpAndSupportContainer>
       <Title>
@@ -24,30 +60,328 @@ const HelpAndSupport = () => {
       </Attendance>
       <SendFeedback>
         <h2>Help & Support</h2>
-        <form>
-          <div>
-            <i class="fa-regular fa-envelope"></i>
-            <input type="text" />
-          </div>
-          <div>
-            <i class="fa-solid fa-question"></i>
-            <input type="text" />
-          </div>
-          <div>
-            <textarea required />
-          </div>
-          <div>
-            <p>I'm writing you to...</p> <select />
-          </div>
-          <div>
-            <p>I'm writing you to...</p> <select />
-          </div>
-          <div>
-            <p>Product (auto-filled)</p> <select />
-          </div>
-          <div>
+        <form onSubmit={handleSubmit}>
+          <Inputs>
+            <i className="fa-regular fa-envelope"></i>
+            <input
+              type="text"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              placeholder="My Email Address is..."
+            />
+          </Inputs>
+          <Inputs>
+            <i className="fa-solid fa-question"></i>
+            <input
+              type="text"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              placeholder="Subject"
+            />
+          </Inputs>
+          <TextareaMessage>
+            <textarea value={msg} onChange={(e) => setMsg(e.target.value)} />
+          </TextareaMessage>
+          <DivOptions clicked={clicked1}>
+            <Label>
+              <p>Estou te escrevendo para...</p>
+            </Label>
+            <Select clicked={clicked1}>
+              <OptionSelected
+                onClick={() => {
+                  setClicked1(!clicked1);
+                  setClicked2(false);
+                }}
+              >
+                <p>
+                  {!select1 && "..."}
+                  {select1 && select1}
+                </p>
+                {!clicked1 && <i className="fa-solid fa-caret-up"></i>}
+                {clicked1 && <i className="fa-solid fa-caret-down"></i>}
+              </OptionSelected>
+              {clicked1 && (
+                <div>
+                  <div
+                    onClick={(e) => {
+                      if (e.target.querySelector("p")) {
+                        setSelect1(e.target.querySelector("p").innerHTML);
+                      } else {
+                        setSelect1(e.target.innerHTML);
+                      }
+                      setClicked1(false);
+                      setSelect2(null);
+                    }}
+                  >
+                    <p>Faça uma Pergunta</p>
+                  </div>
+                  <div
+                    onClick={(e) => {
+                      if (e.target.querySelector("p")) {
+                        setSelect1(e.target.querySelector("p").innerHTML);
+                      } else {
+                        setSelect1(e.target.innerHTML);
+                      }
+                      setClicked1(false);
+                      setSelect2(null);
+                    }}
+                  >
+                    <p>Obter um Reembolso</p>
+                  </div>
+                  <div
+                    onClick={(e) => {
+                      if (e.target.querySelector("p")) {
+                        setSelect1(e.target.querySelector("p").innerHTML);
+                      } else {
+                        setSelect1(e.target.innerHTML);
+                      }
+                      setClicked1(false);
+                      setSelect2(null);
+                    }}
+                  >
+                    <p>Fazer uma Reclamação</p>
+                  </div>
+                </div>
+              )}
+            </Select>
+          </DivOptions>
+          {select1 == "Faça uma Pergunta" && (
+            <DivOptions>
+              <Label>
+                <p>Minha pergunta é sobre...</p>
+              </Label>
+              <Select clicked={clicked2} clicked2={true}>
+                <OptionSelected
+                  onClick={() => {
+                    setClicked2(!clicked2);
+                    setClicked1(false);
+                  }}
+                >
+                  <p>
+                    {!select2 && "..."}
+                    {select2 && select2}
+                  </p>
+                  {!clicked2 && <i className="fa-solid fa-caret-up"></i>}
+                  {clicked2 && <i className="fa-solid fa-caret-down"></i>}
+                </OptionSelected>
+                {clicked2 && (
+                  <div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Onde está meu pedido</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Atraso de envio</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Encomendar o produto</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Devolvendo o produto</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Obter um reembolso</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Disponibilidade de produtos</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Pergunta técnica</p>
+                    </div>
+                  </div>
+                )}
+              </Select>
+            </DivOptions>
+          )}
+          {select1 == "Fazer uma Reclamação" && (
+            <DivOptions>
+              <Label>
+                <p>Minha reclamação é sobre...</p>
+              </Label>
+              <Select clicked={clicked2} clicked2={true}>
+                <OptionSelected
+                  onClick={() => {
+                    setClicked2(!clicked2);
+                    setClicked1(false);
+                  }}
+                >
+                  <p>
+                    {!select2 && "..."}
+                    {select2 && select2}
+                  </p>
+                  {!clicked2 && <i className="fa-solid fa-caret-up"></i>}
+                  {clicked2 && <i className="fa-solid fa-caret-down"></i>}
+                </OptionSelected>
+                {clicked2 && (
+                  <div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>O site</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Preço do Produto</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Envio do produto</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Produto em Si</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Serviço Oferecido</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p>Suporte ao Cliente</p>
+                    </div>
+                    <div
+                      onClick={(e) => {
+                        if (e.target.querySelector("p")) {
+                          setSelect2(e.target.querySelector("p").innerHTML);
+                        } else {
+                          setSelect2(e.target.innerHTML);
+                        }
+                        setClicked2(false);
+                      }}
+                    >
+                      <p></p>
+                    </div>
+                  </div>
+                )}
+              </Select>
+            </DivOptions>
+          )}
+          <DivOptions>
+            <Label>
+              <p>Produto (preenchimento automático)</p>
+            </Label>
+            <Select disabled={true}>
+              <OptionSelected>
+                <p>UltraDentino</p>
+                <i className="fa-solid fa-caret-up"></i>
+              </OptionSelected>
+            </Select>
+          </DivOptions>
+          <DivSubmit>
             <button>Send Feedback</button>
-          </div>
+            <Error error={error}>
+              <p>Por favor, Preencha todos os campos</p>
+            </Error>
+          </DivSubmit>
         </form>
       </SendFeedback>
     </HelpAndSupportContainer>
