@@ -1,3 +1,4 @@
+import FooterTexts from "../../components/FooterTexts";
 import MultiPagesNav from "../../components/MultiPagesNav";
 import { PrivacePolicyContainer, PrivacePolicyContent } from "./styles";
 
@@ -197,6 +198,7 @@ const PrivacePolicy = () => {
         </p>
       </PrivacePolicyContent>
       <MultiPagesNav />
+      <FooterTexts />
     </PrivacePolicyContainer>
   );
 };

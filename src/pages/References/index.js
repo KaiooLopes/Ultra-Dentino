@@ -6,6 +6,7 @@ import {
   LabelImage,
 } from "./styles";
 import LabelImg from "./images/blueberry.png";
+import FooterTexts from "../../components/FooterTexts";
 
 const References = () => {
   return (
@@ -56,6 +57,7 @@ const References = () => {
         <img src={LabelImg} alt="Etiqueta" />
       </LabelImage>
       <MultiPagesNav />
+      <FooterTexts />
     </ReferencesContainer>
   );
 };

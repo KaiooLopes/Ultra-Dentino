@@ -25,4 +25,7 @@ export const ShippingBox = styled.div`
   h2 {
     margin-top: 20px;
   }
+  @media (min-width: 994px) {
+    margin: 40px 60px;
+  }
 `;
