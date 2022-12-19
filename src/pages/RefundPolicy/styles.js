@@ -5,22 +5,22 @@ export const RefundPolicyContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 24px;
 `;
 
 export const RefundIntro = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: start;
+  text-align: center;
+  padding: 0px 24px;
 `;
 
 export const RefundIntroTitle = styled.h2`
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 24px 4px;
-  text-align: start;
+  text-align: center;
 `;
 
 export const RefundIntroTextDiv = styled.div`
@@ -28,9 +28,23 @@ export const RefundIntroTextDiv = styled.div`
   display: flex;
   flex-direction: column;
   padding: 16px 0px;
+  padding: 0px 24px;
 `;
 
 export const RefundIntroText = styled.p`
   font-size: 20px;
   font-weight: 200;
+  text-align: start;
+`;
+
+export const HowToDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 16px 24px;
+  margin: 40px 0px;
+  gap: 10px;
+  padding: 0px 24px;
 `;
