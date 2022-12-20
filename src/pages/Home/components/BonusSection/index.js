@@ -52,19 +52,6 @@ const BonusSection = () => {
           </div>
         </BonusCard1>
       </Cards>
-      <FreeShip>
-        <div>
-          <ShipImage>
-            <img src={Ship} alt="Ship" />
-          </ShipImage>
-          <ShipContent>
-            <h3>
-              Every Order Comes With <b>FREE Shipping Too!</b>
-            </h3>
-            <p>*97% Of Customers Order 6 Bottles (Our Recommended Option)</p>
-          </ShipContent>
-        </div>
-      </FreeShip>
     </BonusSectionContainer>
   );
 };

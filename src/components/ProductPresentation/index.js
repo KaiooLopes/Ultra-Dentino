@@ -8,25 +8,23 @@ import Made from "./images/Made.png";
 import Natural from "./images/Natural.png";
 import Anvisa from "./images/Anvisa.png";
 
-const ProductApresentationSection = () => {
+const ProductApresentation = () => {
   return (
     <ProductApresentationContainer>
       <ImageProduct>
-        <img src={Product} alt="Product Apresentation" />
+        <img src={Product} alt="Product Apresentation Image" />
       </ImageProduct>
       <ProductApresentationContent>
         <div>
           <p>
-            NOVO: o futuro da saúde bucal, UltraDentino é desenvolvido para
-            hálitos refrescantes, sorrisos de holywood e uma saúde bucal
-            perfeita.
+            Novos Probióticos Especialmente Desenvolvidos Para A Saúde De Seus
+            Dentes E Gengivas
           </p>
         </div>
         <div>
           <p>
-            <b>Experimente UltraDentino:</b> Com mais de 3 bilhões de
-            nutrientes, probióticos, vitaminas testados e comprovados
-            cientificamente.
+            <b>Experimente UltraDentino:</b> um blend único de 3.5 bilhões de
+            propioticos e nutrientes aprovados por pesquisas clínicas
           </p>
         </div>
         <div>
@@ -39,4 +37,4 @@ const ProductApresentationSection = () => {
   );
 };
 
-export default ProductApresentationSection;
+export default ProductApresentation;

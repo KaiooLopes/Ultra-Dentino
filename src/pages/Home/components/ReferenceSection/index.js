@@ -11,28 +11,27 @@ const ReferenceSection = () => {
   return (
     <ReferenceSectionContainer id="ReferenceSection">
       <DoctorImage>
-        <img src={DoctorImg} alt="Doctor Image" />
+        <img src={DoctorImg} alt="Doctor" />
       </DoctorImage>
       <ReferenceContent>
         <h3>Maio de 2022 - Nova descoberta científica</h3>
         <p>
-          Um estudo recente recente que foi divulgado pela revista Springer
-          Nature mostra que pessoas com boa saúde bucal tem um alto número de
-          bactérias boas na sua boca.
+          Um novo estudo revelou o segredo para a saúde bucal perfeita (se você
+          pensou que era escovar os dentes e usar enxaguante você está errado)
+          foi descoberto que quem tem dentes claros e não ficam com mau hálito
+          possuem uma grande densidade de bactérias saudáveis na boca.
         </p>
         <span>(Sem pasta de dentes ou lavagem bucal envolvidos)</span>
         <p>
-          Muitos produtos comuns para saúde bucal (como pasta de dentes e
-          enxaguantes bucais) contém ingredientes tóxicos que podem destruir o
-          microbioma da boca. Isso explica o porquê os dentes podem seguir
-          intactos por centenas de anos fora da boca (em fósseis), enquanto em
-          nossa boca eles acabam arruinados por coisas simples como chocolate.
+          Foi descoberto que cremes dentais comuns dizimam essas bactérias com
+          substâncias altamente tóxicas e isso explica por que quando os dentes
+          ficam fora da boca como em fósseis eles ficam intactos por milhares de
+          anos e na boca algo tão banal como sorvete pode DESTRUIR eles.
         </p>
         <ReferalLink>
           <a
             href="https://www.nature.com/articles/d41586-021-02920-w"
-            target="_blank"
-          >
+            target="_blank">
             Link de Referência
           </a>
         </ReferalLink>

@@ -32,7 +32,7 @@ function PriceBox() {
         <PriceBoxCards
           name="bestValue"
           title="6 X EMBALAGENS"
-          sup="180 dias de suplementos"
+          sup="180 dias de uso"
           source={imgBV}
           price="594"
           discount="294"
@@ -40,7 +40,7 @@ function PriceBox() {
         <PriceBoxCards
           name="mostPopular"
           title="3 X EMBALAGENS"
-          sup="90 dias de suplementos"
+          sup="90 dias de uso"
           source={imgMP}
           price="297"
           discount="177"
@@ -48,7 +48,7 @@ function PriceBox() {
         <PriceBoxCards
           name="comum"
           title="1 X EMBALAGEM"
-          sup="30 dias de suplemento"
+          sup="30 dias de uso"
           source={imgCom}
           price="99"
           discount="69"

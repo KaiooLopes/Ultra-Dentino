@@ -3,6 +3,7 @@ import ContactSection from "./components/ContactSection";
 import FAQSection from "./components/FAQSection";
 import HelpAndSupport from "./components/HelpAndSupport";
 import { ContactContainer } from "./styles";
+import FooterTexts from "../../components/FooterTexts";
 
 const Contact = () => {
   return (
@@ -11,6 +12,7 @@ const Contact = () => {
       <FAQSection />
       <HelpAndSupport />
       <MultiPagesNav />
+      <FooterTexts />
     </ContactContainer>
   );
 };

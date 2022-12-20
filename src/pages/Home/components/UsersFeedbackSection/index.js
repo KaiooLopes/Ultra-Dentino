@@ -38,19 +38,22 @@ const UsersFeedbackSection = () => {
             <img src={user1} alt="" />
           </UserImage>
           <UserContent>
-            <h1>Sam Perkin is enjoying better oral health…</h1>
+            <h1>
+              Maria Eduarda está impressionada com os dentes mais brancos que
+              nunca...
+            </h1>
             <div>
               <img src={stars} alt="" />
-              <p>Verified Purchase</p>
+              <p>Compra Verificada</p>
             </div>
             <div>
               <p>
-                “I’ve always taken such good care of my teeth but it always felt
-                like I wasn’t doing enough. Now, for the first time in decades,
-                my teeth feel amazing.”
+                “Eu sempre cuidei muito dos meus dentes, mas nunca achei que
+                fosse suficiente. Agora, pela primeira vez em muito tempo, estou
+                adorando meus dentes”
               </p>
               <p>
-                <b>Sam Perkin</b> - Dallas, USA
+                <b>Maria Eduarda</b> - Florianópolis, Santa Catarina
               </p>
             </div>
           </UserContent>
@@ -60,18 +63,18 @@ const UsersFeedbackSection = () => {
             <img src={user2} alt="" />
           </UserImage>
           <UserContent>
-            <h1>Portia Thompson loves her fresh breath…</h1>
+            <h1>Ana Julia ama ter um hálito refrescante o dia todo...</h1>
             <div>
               <img src={stars} alt="" />
-              <p>Verified Purchase</p>
+              <p>Compra Verificada</p>
             </div>
             <div>
               <p>
-                “It’s just unbelievable how much I like ProDentim. I’m so glad
-                my dentist recommended it to me!”
+                “É inacreditavel o quanto eu gostei do UltraDentino, Fico muito
+                feliz que meu dentista tenha me recomendado!”
               </p>
               <p>
-                <b>Portia Thompson</b> - Florida, USA
+                <b>Ana Julia</b> - Natal, Rio Grande do Norte
               </p>
             </div>
           </UserContent>
@@ -81,18 +84,20 @@ const UsersFeedbackSection = () => {
             <img src={user3} alt="" />
           </UserImage>
           <UserContent>
-            <h1>Theo Franklin doesn’t spend fortunes on dentists...</h1>
+            <h1>
+              Manuela Pereira não gasta mais rios de dinheiro em dentistas...
+            </h1>
             <div>
               <img src={stars} alt="" />
-              <p>Verified Purchase</p>
+              <p>Compra Verificada</p>
             </div>
             <div>
               <p>
-                “My gums have never looked better. It feels so good to not have
-                to worry about my teeth. I simply love it!”
+                “Minhas gengivas estão espetaculares. É muito bom não ter que me
+                preocupar com meus dentes. Eu amo isso!”
               </p>
               <p>
-                <b>Theo Franklin</b> - Chicago, USA
+                <b>Manuela Pereira</b> - Londrina, Paraná
               </p>
             </div>
           </UserContent>

@@ -1,3 +1,4 @@
+import FooterTexts from "../../components/FooterTexts";
 import MultiPagesNav from "../../components/MultiPagesNav";
 import { TermsOfUseContainer, TermsOfUseContent } from "./styles";
 
@@ -152,6 +153,7 @@ const TermsOfUse = () => {
         </p>
       </TermsOfUseContent>
       <MultiPagesNav />
+      <FooterTexts />
     </TermsOfUseContainer>
   );
 };

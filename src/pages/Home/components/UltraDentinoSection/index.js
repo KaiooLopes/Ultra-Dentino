@@ -18,22 +18,22 @@ const UltraDentinoSection = () => {
         <UltraDentinoUl>
           <ul>
             <li>
-              <i className="fa-solid fa-circle-check"></i>Natural Formula
+              <i className="fa-solid fa-circle-check"></i>Formula Natural
             </li>
             <li>
-              <i className="fa-solid fa-circle-check"></i>Easy To Use
+              <i className="fa-solid fa-circle-check"></i>Facil de Usar
             </li>
             <li>
-              <i className="fa-solid fa-circle-check"></i>Non-GMO
+              <i className="fa-solid fa-circle-check"></i>Sem OGM's
             </li>
             <li>
-              <i className="fa-solid fa-circle-check"></i>No Stimulants
+              <i className="fa-solid fa-circle-check"></i>Sem Estimulantes
             </li>
             <li>
-              <i className="fa-solid fa-circle-check"></i>Non-Habit Forming
+              <i className="fa-solid fa-circle-check"></i>Não Vicía
             </li>
             <li>
-              <i className="fa-solid fa-circle-check"></i>Gluten Free
+              <i className="fa-solid fa-circle-check"></i>Sem Glúten
             </li>
           </ul>
         </UltraDentinoUl>

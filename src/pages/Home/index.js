@@ -13,6 +13,7 @@ import BonusSection from "./components/BonusSection";
 import FAQ from "./components/FAQ";
 import MadeBrazil from "./components/MadeBrazil";
 import MultiPagesNav from "../../components/MultiPagesNav";
+import FooterTexts from "./components/FooterTexts";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
       <PriceBox />
       <ScientificSection />
       <MultiPagesNav />
+      <FooterTexts />
     </>
   );
 };

@@ -8,25 +8,25 @@ const MultiPagesNav = () => {
     <MultiPagesNavContainer>
       <Links>
         <Link to="/contact" target="_blank">
-          Contact
+          Contato
         </Link>
         <Link to="/references" target="_blank">
-          References
+          Referências
         </Link>
         <Link to="/termsofuse" target="_blank">
-          TermsOfUse
+          Termos de uso
         </Link>
         <Link to="/disclaimer" target="_blank">
-          Disclaimer
+          Aviso legal
         </Link>
         <Link to="/privacepolicy" target="_blank">
-          Privace Policy
+          Políticas de privacidade
         </Link>
         <Link to="/shippingpolicy" target="_blank">
-          Shipping Policy
+          Políticas de envio
         </Link>
         <Link to="/refundpolicy" target="_blank">
-          Refund Policy
+          Políticas de reembolso
         </Link>
       </Links>
     </MultiPagesNavContainer>
