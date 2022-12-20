@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import {
   HelpAndSupportContainer,
@@ -14,6 +13,7 @@ import {
   Error,
   Label,
 } from "./styles";
+import emailjs from "@emailjs/browser";
 
 const HelpAndSupport = () => {
   const [email, setEmail] = useState("");
@@ -27,18 +27,38 @@ const HelpAndSupport = () => {
 
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (
       !email ||
       !name ||
       !msg ||
       !select1 ||
-      (select1 !== "Obter um Reembolso" && select2)
+      (select1 !== "Obter um Reembolso" && !select2)
     ) {
       setError(true);
-    } else {
-      console.log("enviado");
+      return;
+    }
+
+    const templateParamns = {
+      from_name: name,
+      from_email: email,
+      from_message: msg,
+      from_select1: select1,
+      from_select2: select2,
+    };
+    setError(false);
+    try {
+      await emailjs.send(
+        "service_5ctho19",
+        "template_vxsefv5",
+        templateParamns,
+        "2lDKer35MXvDM1B7p"
+      );
+      alert("Email enviado com sucesso.");
+    } catch (error) {
+      console.log(error);
+      alert("Algo deu errado, por favor, tente novamente mais tarde.");
     }
   };
 
@@ -60,27 +80,45 @@ const HelpAndSupport = () => {
       </Attendance>
       <SendFeedback>
         <h2>Help & Support</h2>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          method="POST"
+          action="https://api.staticforms.xyz/submit"
+        >
+          <input
+            type="hidden"
+            name="accessKey"
+            value="b3f53f20-ba77-4bee-99c2-8001359c3771"
+          ></input>
           <Inputs>
             <i className="fa-regular fa-envelope"></i>
             <input
-              type="text"
+              type="email"
+              name="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               placeholder="My Email Address is..."
+              required
             />
           </Inputs>
           <Inputs>
             <i className="fa-solid fa-question"></i>
             <input
               type="text"
+              name="subject"
               onChange={(e) => setName(e.target.value)}
               value={name}
               placeholder="Subject"
+              required
             />
           </Inputs>
           <TextareaMessage>
-            <textarea value={msg} onChange={(e) => setMsg(e.target.value)} />
+            <textarea
+              value={msg}
+              name="message"
+              onChange={(e) => setMsg(e.target.value)}
+              required
+            />
           </TextareaMessage>
           <DivOptions clicked={clicked1}>
             <Label>
@@ -113,7 +151,7 @@ const HelpAndSupport = () => {
                       setSelect2(null);
                     }}
                   >
-                    <p>Faça uma Pergunta</p>
+                    <p>Fazer uma Pergunta</p>
                   </div>
                   <div
                     onClick={(e) => {
@@ -145,7 +183,7 @@ const HelpAndSupport = () => {
               )}
             </Select>
           </DivOptions>
-          {select1 == "Faça uma Pergunta" && (
+          {select1 === "Fazer uma Pergunta" && (
             <DivOptions>
               <Label>
                 <p>Minha pergunta é sobre...</p>
@@ -255,7 +293,7 @@ const HelpAndSupport = () => {
               </Select>
             </DivOptions>
           )}
-          {select1 == "Fazer uma Reclamação" && (
+          {select1 === "Fazer uma Reclamação" && (
             <DivOptions>
               <Label>
                 <p>Minha reclamação é sobre...</p>
@@ -380,6 +418,7 @@ const HelpAndSupport = () => {
             <button>Send Feedback</button>
             <Error error={error}>
               <p>Por favor, Preencha todos os campos</p>
+              <div onClick={() => setError(false)}>X</div>
             </Error>
           </DivSubmit>
         </form>

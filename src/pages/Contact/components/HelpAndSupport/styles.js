@@ -69,8 +69,9 @@ export const TextareaMessage = styled.div`
   width: 94%;
   justify-content: center;
   border: 1px solid black;
+  transition: 0.4s;
   &:focus-within {
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 1px 1px 5px black;
   }
   textarea {
     resize: none;
@@ -93,7 +94,7 @@ export const Inputs = styled.div`
   margin: 10px;
   padding: 0 8px;
   &:focus-within {
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 1px 1px 5px black;
   }
   transition: 0.4s;
   border: 1px solid black;
@@ -183,9 +184,22 @@ export const Error = styled.div`
   text-align: center;
   right: 100px;
   top: -60px;
-  background-color: wheat;
+  background-color: #e85858;
   border-radius: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  div {
+    margin: 4px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      align-items: center;
+    }
+  }
   p {
+    width: 80%;
     padding: 10px;
   }
 `;
