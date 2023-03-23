@@ -11,7 +11,6 @@ import {
   TextareaMessage,
   DivSubmit,
   Error,
-  Label,
 } from "./styles";
 import emailjs from "@emailjs/browser";
 
@@ -121,9 +120,7 @@ const HelpAndSupport = () => {
             />
           </TextareaMessage>
           <DivOptions clicked={clicked1}>
-            <Label>
-              <p>Estou te escrevendo para...</p>
-            </Label>
+            <p>Estou te escrevendo para...</p>
             <Select clicked={clicked1}>
               <OptionSelected
                 onClick={() => {
@@ -185,9 +182,7 @@ const HelpAndSupport = () => {
           </DivOptions>
           {select1 === "Fazer uma Pergunta" && (
             <DivOptions>
-              <Label>
-                <p>Minha pergunta é sobre...</p>
-              </Label>
+              <p>Minha pergunta é sobre...</p>
               <Select clicked={clicked2} clicked2={true}>
                 <OptionSelected
                   onClick={() => {
@@ -295,9 +290,7 @@ const HelpAndSupport = () => {
           )}
           {select1 === "Fazer uma Reclamação" && (
             <DivOptions>
-              <Label>
-                <p>Minha reclamação é sobre...</p>
-              </Label>
+              <p>Minha reclamação é sobre...</p>
               <Select clicked={clicked2} clicked2={true}>
                 <OptionSelected
                   onClick={() => {
@@ -404,9 +397,7 @@ const HelpAndSupport = () => {
             </DivOptions>
           )}
           <DivOptions>
-            <Label>
-              <p>Produto (preenchimento automático)</p>
-            </Label>
+            <p>Produto</p>
             <Select disabled={true}>
               <OptionSelected>
                 <p>UltraDentino</p>

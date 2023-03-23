@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   ContactUsContainer,
   Title,
@@ -19,7 +20,7 @@ const ContactUs = () => {
                 <p> Product Email Support</p>
               </SupportName>
               <SupportContact>
-                <a href="#">contact@prodentim-product.com</a>
+                <Link to="/">contact@prodentim-product.com</Link>
               </SupportContact>
             </td>
           </tr>
@@ -29,7 +30,7 @@ const ContactUs = () => {
                 <p> Product Phone Support</p>
               </SupportName>
               <SupportContact>
-                <a href="#">+1 (302) 754-3446Mon</a>
+                <Link to="/">+1 (302) 754-3446Mon</Link>
                 <span>- Sun 10 AM - 1 AM EST</span>
               </SupportContact>
             </td>
@@ -40,7 +41,7 @@ const ContactUs = () => {
                 <p>Order Self Service</p>
               </SupportName>
               <SupportContact>
-                <a href="#">https://www.clkbank.com/</a>
+                <Link to="/">https://www.clkbank.com/</Link>
               </SupportContact>
             </td>
           </tr>
@@ -51,7 +52,7 @@ const ContactUs = () => {
                 <span>- Toll Free - </span>
               </SupportName>
               <SupportContact>
-                <a href="#">1-800-390-6035</a>
+                <Link to="/">1-800-390-6035</Link>
                 <span>24/7</span>
               </SupportContact>
             </td>
@@ -63,7 +64,7 @@ const ContactUs = () => {
                 <span>- International - </span>
               </SupportName>
               <SupportContact>
-                <a href="#">+1 208-345-4245</a>
+                <Link to="/">+1 208-345-4245</Link>
               </SupportContact>
             </td>
           </tr>

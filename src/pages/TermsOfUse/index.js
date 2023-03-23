@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FooterTexts from "../../components/FooterTexts";
 import MultiPagesNav from "../../components/MultiPagesNav";
 import { TermsOfUseContainer, TermsOfUseContent } from "./styles";
@@ -135,15 +136,15 @@ const TermsOfUse = () => {
           to the fullest extent of the law anyone who attempts to steal our
           property. You agree not to copy content from our website without our
           permission. Any requests to use our content should be submitted to us
-          by e-mail to <a href="#">contact@prodentim-product.com</a>.
+          by e-mail to <Link to="/">contact@prodentim-product.com</Link>.
         </p>
         <p>
           If you believe that your intellectual property rights have been
           infringed upon by our website content, please notify us by sending an
-          e-mail to <a href="#">contact@prodentim-product.com</a>, or by sending
-          mail to us at the address listed below. Please describe in detail the
-          alleged infringement, including the factual and legal basis for your
-          claim of ownership.
+          e-mail to <Link to="/">contact@prodentim-product.com</Link>, or by
+          sending mail to us at the address listed below. Please describe in
+          detail the alleged infringement, including the factual and legal basis
+          for your claim of ownership.
         </p>
         <h3>ENTIRE AGREEMENT</h3>
         <p>

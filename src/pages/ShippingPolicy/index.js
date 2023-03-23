@@ -2,6 +2,7 @@ import MultiPagesNav from "../../components/MultiPagesNav";
 import { ShippingBox, ShippingPolicyContainer } from "./styles";
 import FooterTexts from "../../components/FooterTexts";
 import ContactUs from "../../components/ContactUs";
+import { Link } from "react-router-dom";
 
 const ShippingPolicy = () => {
   return (
@@ -31,7 +32,7 @@ const ShippingPolicy = () => {
           your health and satisfaction with our supplements is our goal and
           business identity. If, at any time, you have any questions, simply let
           us know by writing us an email to this address
-          <a> contact@prodentim-product.com.</a>
+          <Link to="/"> contact@prodentim-product.com.</Link>
         </p>
       </ShippingBox>
       <ShippingBox>
@@ -72,7 +73,7 @@ const ShippingPolicy = () => {
           possible, in order for us to make the proper changes, so that you can
           receive and enjoy the ordered products. You can find us any day of the
           week online, at
-          <a> contact@prodentim-product.com.</a>
+          <Link to="/"> contact@prodentim-product.com.</Link>
         </p>
         <h2>
           I need more information about the product or the shipping process.
@@ -82,7 +83,7 @@ const ShippingPolicy = () => {
           We stand right by our customers every step of the way. So, if you have
           questions regarding the product, the order or the shipping process,
           we're here to help. Just write us an email, any day of the week at
-          <a> contact@prodentim-product.com.</a>
+          <Link to="/"> contact@prodentim-product.com.</Link>
         </p>
         <ContactUs />
       </ShippingBox>

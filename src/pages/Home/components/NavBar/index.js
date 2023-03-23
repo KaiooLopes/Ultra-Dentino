@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  NavList,
-  HamburguerMenu,
-  NavBarContainer,
-  LogoDiv,
-  Logo,
-} from "./styles";
+import React, { useState } from "react";
+import { NavList, HamburguerMenu, NavBarContainer, LogoDiv } from "./styles";
 import LogoImg from "./images/logo.jpg";
 
 const NavBar = () => {

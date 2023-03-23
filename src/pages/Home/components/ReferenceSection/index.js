@@ -6,6 +6,7 @@ import {
   ReferalLink,
 } from "./styles";
 import DoctorImg from "./images/doctor.png";
+import { Link } from "react-router-dom";
 
 const ReferenceSection = () => {
   return (
@@ -29,11 +30,13 @@ const ReferenceSection = () => {
           anos e na boca algo tão banal como sorvete pode DESTRUIR eles.
         </p>
         <ReferalLink>
-          <a
+          <Link
+            to="/"
             href="https://www.nature.com/articles/d41586-021-02920-w"
-            target="_blank">
+            target="_blank"
+          >
             Link de Referência
-          </a>
+          </Link>
         </ReferalLink>
       </ReferenceContent>
     </ReferenceSectionContainer>

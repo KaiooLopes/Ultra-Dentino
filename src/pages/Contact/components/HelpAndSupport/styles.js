@@ -108,30 +108,24 @@ export const Inputs = styled.div`
   }
 `;
 
-export const DivOptions = styled.div`
-  width: 94%;
-  margin: 20px auto;
-  padding: 10px;
+export const DivOptions = styled.label`
   display: flex;
+  margin: 20px auto;
   justify-content: space-between;
   position: relative;
-`;
-
-export const Label = styled.div`
   p {
-    font-size: 13px;
+    width: 40%;
+    max-width: 180px;
   }
 `;
 
 export const Select = styled.div`
+  position: absolute;
   padding: 3px;
   border: 1px solid black;
   border-radius: 5px;
   width: 55%;
-  top: 0;
-  right: 0;
   background-color: ${(props) => (props.disabled ? "#E5E5E5" : "white")};
-  position: absolute;
   top: 5px;
   right: 0;
   cursor: ${(props) => (props.disabled ? "default" : "pointer")};

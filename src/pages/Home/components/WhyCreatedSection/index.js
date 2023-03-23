@@ -31,7 +31,7 @@ const WhyCreatedSection = () => {
           </p>
         </WhyCreatedContent>
         <ProductImage>
-          <img src={ProductImg} alt="Product Image" />
+          <img src={ProductImg} alt="Product" />
         </ProductImage>
       </WhyCreatedSectionContainer>
     </Background>

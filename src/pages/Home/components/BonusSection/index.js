@@ -1,15 +1,5 @@
-import {
-  BonusSectionContainer,
-  Title,
-  Cards,
-  BonusCard1,
-  BonusCard2,
-  FreeShip,
-  ShipImage,
-  ShipContent,
-} from "./styles";
+import { BonusSectionContainer, Title, Cards, BonusCard1 } from "./styles";
 import Product from "./images/Product.png";
-import Ship from "./images/Ship.jpg";
 
 const BonusSection = () => {
   return (
