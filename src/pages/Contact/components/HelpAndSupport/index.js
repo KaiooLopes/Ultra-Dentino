@@ -37,7 +37,7 @@ const HelpAndSupport = () => {
     ) {
       setError(true);
       return;
-    }
+    } /* 
 
     const templateParamns = {
       from_name: name,
@@ -45,15 +45,15 @@ const HelpAndSupport = () => {
       from_message: msg,
       from_select1: select1,
       from_select2: select2,
-    };
+    }; */
     setError(false);
     try {
-      await emailjs.send(
+      /*       await emailjs.send(
         "service_5ctho19",
         "template_vxsefv5",
         templateParamns,
         "2lDKer35MXvDM1B7p"
-      );
+      ); */
       alert("Email enviado com sucesso.");
     } catch (error) {
       console.log(error);
