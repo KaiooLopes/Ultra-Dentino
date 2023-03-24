@@ -20,7 +20,7 @@ const ContactUs = () => {
                 <p> Product Email Support</p>
               </SupportName>
               <SupportContact>
-                <Link to="/">contact@prodentim-product.com</Link>
+                <Link to="/">contact@ultradentino-product.com</Link>
               </SupportContact>
             </td>
           </tr>
@@ -30,7 +30,7 @@ const ContactUs = () => {
                 <p> Product Phone Support</p>
               </SupportName>
               <SupportContact>
-                <Link to="/">+1 (302) 754-3446Mon</Link>
+                <Link to="/">+1 (111) 111-1111Mon</Link>
                 <span>- Sun 10 AM - 1 AM EST</span>
               </SupportContact>
             </td>
@@ -41,7 +41,7 @@ const ContactUs = () => {
                 <p>Order Self Service</p>
               </SupportName>
               <SupportContact>
-                <Link to="/">https://www.clkbank.com/</Link>
+                <Link to="/">https://www.cccbank.com/</Link>
               </SupportContact>
             </td>
           </tr>
@@ -52,7 +52,7 @@ const ContactUs = () => {
                 <span>- Toll Free - </span>
               </SupportName>
               <SupportContact>
-                <Link to="/">1-800-390-6035</Link>
+                <Link to="/">1-111-111-1111</Link>
                 <span>24/7</span>
               </SupportContact>
             </td>
@@ -64,7 +64,7 @@ const ContactUs = () => {
                 <span>- International - </span>
               </SupportName>
               <SupportContact>
-                <Link to="/">+1 208-345-4245</Link>
+                <Link to="/">+1 111-111-1111</Link>
               </SupportContact>
             </td>
           </tr>
