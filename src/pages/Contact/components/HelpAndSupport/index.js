@@ -12,7 +12,6 @@ import {
   DivSubmit,
   Error,
 } from "./styles";
-import emailjs from "@emailjs/browser";
 
 const HelpAndSupport = () => {
   const [email, setEmail] = useState("");
