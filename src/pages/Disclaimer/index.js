@@ -1,5 +1,3 @@
-import FooterTexts from "../../components/FooterTexts";
-import MultiPagesNav from "../../components/MultiPagesNav";
 import { DisclaimerContainer, DisclaimerContent } from "./styles";
 
 const Disclaimer = () => {
@@ -194,8 +192,6 @@ const Disclaimer = () => {
         </p>
         <p>Any rights not expressly granted herein are reserved.</p>
       </DisclaimerContent>
-      <MultiPagesNav />
-      <FooterTexts />
     </DisclaimerContainer>
   );
 };

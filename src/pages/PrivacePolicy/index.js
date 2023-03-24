@@ -1,5 +1,3 @@
-import FooterTexts from "../../components/FooterTexts";
-import MultiPagesNav from "../../components/MultiPagesNav";
 import { PrivacePolicyContainer, PrivacePolicyContent } from "./styles";
 
 const PrivacePolicy = () => {
@@ -197,8 +195,6 @@ const PrivacePolicy = () => {
           corrente seja o mesmo utilizado na compra do produto.
         </p>
       </PrivacePolicyContent>
-      <MultiPagesNav />
-      <FooterTexts />
     </PrivacePolicyContainer>
   );
 };

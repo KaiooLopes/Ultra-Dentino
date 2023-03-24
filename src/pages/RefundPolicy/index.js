@@ -1,4 +1,3 @@
-import MultiPagesNav from "../../components/MultiPagesNav";
 import {
   HowToDiv,
   RefundIntro,
@@ -8,7 +7,6 @@ import {
   RefundPolicyContainer,
 } from "./styles";
 import ContactUs from "../../components/ContactUs";
-import FooterTexts from "../RefundPolicy/components/FooterTexts";
 
 const RefundPolicy = () => {
   return (
@@ -68,8 +66,6 @@ const RefundPolicy = () => {
         </RefundIntroText>
         <ContactUs />
       </RefundIntro>
-      <MultiPagesNav />
-      <FooterTexts />
     </RefundPolicyContainer>
   );
 };

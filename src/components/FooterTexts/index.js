@@ -40,9 +40,17 @@ function FooterTexts() {
         </p>
       </InfoTexts>
       <CopyRight>
-        Copyright @ 2022 <b>UltraDentino</b> | Todos os direitos reservados |
-        Feito por{" "}
-        <a href="https://kaioportfolio.netlify.app">Kaio Alves Lopes</a>
+        <p>
+          Copyright @ 2022 <b>UltraDentino</b> | Todos os direitos reservados |
+          Feito por
+        </p>
+        <a
+          href="https://kaioportfolio.netlify.app"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          Kaio Alves Lopes
+        </a>
       </CopyRight>
     </FooterContainer>
   );

@@ -12,8 +12,6 @@ import WhyCreatedSection from "./components/WhyCreatedSection";
 import BonusSection from "./components/BonusSection";
 import FAQ from "./components/FAQ";
 import MadeBrazil from "./components/MadeBrazil";
-import MultiPagesNav from "../../components/MultiPagesNav";
-import FooterTexts from "./components/FooterTexts";
 
 const Home = () => {
   return (
@@ -32,8 +30,6 @@ const Home = () => {
       <FAQ />
       <PriceBox />
       <ScientificSection />
-      <MultiPagesNav />
-      <FooterTexts />
     </>
   );
 };

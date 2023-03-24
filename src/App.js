@@ -15,6 +15,8 @@ import References from "./pages/References";
 import RefundPolicy from "./pages/RefundPolicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
+import MultiPagesNav from "./components/MultiPagesNav";
+import FooterTexts from "./components/FooterTexts";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -49,6 +51,8 @@ function App() {
           <Route path="/shippingpolicy" element={<ShippingPolicy />} />
           <Route path="/termsofuse" element={<TermsOfUse />} />
         </Routes>
+        <MultiPagesNav />
+        <FooterTexts />
       </BrowserRouter>
     </>
   );

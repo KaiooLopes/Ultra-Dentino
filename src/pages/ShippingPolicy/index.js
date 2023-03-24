@@ -1,6 +1,4 @@
-import MultiPagesNav from "../../components/MultiPagesNav";
 import { ShippingBox, ShippingPolicyContainer } from "./styles";
-import FooterTexts from "../../components/FooterTexts";
 import ContactUs from "../../components/ContactUs";
 import { Link } from "react-router-dom";
 
@@ -87,8 +85,6 @@ const ShippingPolicy = () => {
         </p>
         <ContactUs />
       </ShippingBox>
-      <MultiPagesNav />
-      <FooterTexts />
     </ShippingPolicyContainer>
   );
 };

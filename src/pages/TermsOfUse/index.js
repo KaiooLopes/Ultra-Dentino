@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import FooterTexts from "../../components/FooterTexts";
-import MultiPagesNav from "../../components/MultiPagesNav";
 import { TermsOfUseContainer, TermsOfUseContent } from "./styles";
 
 const TermsOfUse = () => {
@@ -153,8 +151,6 @@ const TermsOfUse = () => {
           respect to your use of our website.
         </p>
       </TermsOfUseContent>
-      <MultiPagesNav />
-      <FooterTexts />
     </TermsOfUseContainer>
   );
 };

@@ -48,6 +48,6 @@ export const CopyRight = styled.div`
 
   a {
     text-decoration: none;
-    color: #3298da;
+    color: blue;
   }
 `;
