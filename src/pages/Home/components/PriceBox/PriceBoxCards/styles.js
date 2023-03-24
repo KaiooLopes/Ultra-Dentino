@@ -48,7 +48,8 @@ export const CardsImg = styled.div`
   display: flex;
   justify-content: center;
   img {
-    width: 80%;
+    width: 300px;
+    height: 300px;
   }
 `;
 
