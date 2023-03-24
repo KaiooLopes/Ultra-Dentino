@@ -45,4 +45,9 @@ export const CopyRight = styled.div`
   padding: 24px 0px;
   font-size: 16px;
   text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #3298da;
+  }
 `;
